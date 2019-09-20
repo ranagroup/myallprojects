@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="DriverController"
+		class="com.xyz.controller.DriverController">
+	</bean>
+	<bean id="VehicleController"
+		class="com.xyz.controller.VehicleController">
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="suffix" value=".jsp" />
+	</bean>
+</beans>
