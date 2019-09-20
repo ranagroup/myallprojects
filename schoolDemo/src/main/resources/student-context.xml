@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<bean id="s1" class="student.Studentinfo">
+	<property name="name" value="rana"></property>
+	<property name="roll" value="01"></property>
+	<property name="address" value="19340 sandy lack dr"></property>
+	<property name="department" value="IT"></property>
+	<property name="ta" ref="teacher1"></property>
+	</bean>
+	<bean id="teacher1" class="student.Teacher">
+	<property name="name" value="Mizan"></property>
+	<property name="subject" value="computer"></property>
+	<property name="department" value="IT"></property>
+	<property name="designation" value="ass-teacher"></property>
+	</bean>
+	
+</beans>
